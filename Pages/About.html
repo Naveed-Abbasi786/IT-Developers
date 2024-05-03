@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Website</title>
+  <!-- Style -->
+  <link rel="stylesheet" href="../Style/style.css">
+  <link rel="stylesheet" href="../Style/AboutStyle.css">
+  <!-- Responsive css -->
+  <link rel="stylesheet" href="../Style/Responsive.css">
+  <!-- Bootsrtap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Font awesome librares-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Navbar-Start -->
+  <nav class="navbar navbar-expand-lg navbar-light Navbar-Customize" style="background-color: #ffff;">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#">
+        <img src="../Assets/Images/logo.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
+        It developers
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+
+        <div class="navbar-nav Nav-links mx-auto">
+          <a class="nav-link px-3" aria-current="page" href="../Pages/index.html">Home</a>
+          <a class="nav-link px-3" href="../Pages/About.html">About us</a>
+          <a class="nav-link px-3" href="../Pages/Service.html">Service</a>
+          <a class="nav-link px-3" href="../Pages/RecentWorks.html" tabindex="-1" aria-disabled="true">Recent Works</a>
+          <a class="nav-link px-3" href="../Pages/Contact.html" tabindex="-1" aria-disabled="true">Contact-Us</a>
+        </div>
+        <button class="Contact-Us">Contact Us</button>
+      </div>
+    </div>
+  </nav>
+
+  <h1 class="h1">About Us </h1>
+  <Section class="first-Section">
+    <div class="Row">
+      <div class="text-colum">
+        <h3>Leading companies trust us <br><span>to develop software</span></h3>
+        <p>We <span> add development capacity </span>to tech teams. Our value isn’t limited to building teams but is
+          equally distributed across the project lifecycle. We are a custom software development company that guarantees
+          the successful delivery of your project.</p>
+        <div class="Moreinfo">
+          See more Informations
+          <span> <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </div>
+      <div class="vedio-colum">
+        <video id="video-player" width="100%" controls>
+          <source src="../Assets/Vedios/7989448-hd_1920_1080_25fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="play-button" onclick="toggleVideo()"></div>
+      </div>
+    </div>
+  </Section>
+
+  <div class="About-Section">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+      <div class="parallax-bg" style="
+              background-image: url(../Assets/Images/bg-About.jpg);
+            " data-swiper-parallax="-23%"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">About Us</div>
+          <div class="subtitle" data-swiper-parallax="-200">Our Software House</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">Our Team</div>
+          <div class="subtitle" data-swiper-parallax="-200">Best Conversation</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non porttitor. Suspendisse in sem justo.
+              Integer laoreet.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">Our Clients</div>
+          <div class="subtitle" data-swiper-parallax="-200">Very Happy</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia
+              euismod.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foter-container">
+      <ul class="Company-about">
+        <li>
+          <img src="../Assets/Images/logo-removebg-preview (2).png" alt="logo">Itdevelopers
+        </li>
+        <li>
+          <p>
+            Lorem dummy text of the printing and typesetting industry. Ipsum is simply dummy text of the printing and
+            typesetting industry.
+          </p>
+        </li>
+        <li><img src="../Assets/Images/google-page-speed 1.png" alt=""></li>
+      </ul>
+      <ul>
+        <li>
+          <h3>Links</h3>
+        </li>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Recent Works</a></li>
+        <li><a href="">Blogs</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <h3>Contact us</h3>
+        </li>
+        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+        <li>+92 311 1309060</li>
+        <ul class="Soical-icons">
+          <li>
+            <a href="">
+              <i class="fab fa-facebook-f icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-twitter icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-linkedin icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-google-plus-g icon"></i>
+            </a>
+          </li>
+        </ul>
+      </ul>
+
+    </div>
+  </footer>
+
+
+  <!-- Script -->
+  <script src="../Script.js/Script.js"></script>
+  <!-- Gsap library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../Script.js/Gsap.js"></script>
+  <!-- bootsrtrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      speed: 600,
+      parallax: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

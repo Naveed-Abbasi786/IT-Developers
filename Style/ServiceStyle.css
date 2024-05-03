@@ -1,0 +1,201 @@
+.Section{
+    width: 100%;
+    height: 134vh;
+}
+.Section>h2{
+    text-align: center;
+    font-family: poppins;
+    font-weight: 400;
+    line-height: 1.7;
+    padding-top: 2%;
+}
+.Section h2>span{
+    font-weight: 800;
+}
+.Section .cards {
+    width: 90%;
+    margin: 3% auto;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+}
+.Section .cards .card {
+    flex-basis: calc(50% - 20px);   
+    margin: 10px;
+    height: 30vh;
+    background: #ececed;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    overflow: hidden;
+&:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #4a494e;
+  color: white;
+  height:32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+&:hover:before {
+  transform: scale(41);
+}
+}
+ 
+.Section .cards .card>.img{
+    width: 10%; 
+    height: 26%;
+    margin: 6% 0 0 5%;
+    border-radius: 7px;
+    background: #28272e;
+}
+/* All of the card imgage bg chnage */
+.Section .cards .card:nth-child(2)>.img{
+    background: linear-gradient(to right, rgba(104, 219, 242, 1) 0%, rgba(80, 156, 245, 1) 100%);
+}
+.Section .cards .card:nth-child(3)>.img{
+    background: linear-gradient(to right, #FF92AE 0%, #FF3D9A 100%);
+}
+.Section .cards .card:nth-child(4)>.img{
+    background: linear-gradient(to right, #67E9F1 0%, #24E795 100%);
+}
+.Section .cards .card:nth-child(5)>.img{
+    background: linear-gradient(to right, #FFEF5E 0%, #F7936F 100%);
+}
+.Section .cards .card:nth-child(6)>.img{
+    background: linear-gradient(to right, #F76680 0%, #57007B 100%);
+}
+.Section .cards .card>.img >img{
+    width: 50%;
+    height: 60%;
+    margin: 15% 0 0 25%;
+}
+.Section .cards .card .text-content{
+    width: 80%;
+    margin: -9% 0 0 22%;
+}
+.Section .cards .card .text-content>h4{
+color: #28272e;
+}
+.Section .cards .card .text-content>p{
+    font-family:Inter;
+     line-height: 1.6; 
+    font-weight: 400;
+    color: #8a939f;
+}
+.Section .cards .card .text-content p>span{
+    color: #28272e;
+}
+
+/* All of the Span Chnage color */
+.Section .cards .card:nth-child(2) .text-content p>span{
+    color:  #ba13c9;
+ }
+.Section .cards .card:nth-child(3) .text-content p>span{
+   color:  #FF92AE;
+}
+.Section .cards .card:nth-child(4) .text-content p>span{
+    color:  #24E795;
+
+} .Section .cards .card:nth-child(5) .text-content p>span{
+    color:  #FFEF5E;
+ }
+ .Section .cards .card:nth-child(5) .text-content p>span{
+    color:  #F76680;
+ }
+
+
+/* Hovers crad in text content color change */
+ .Section .cards .card:hover .text-content p{
+    color: white;
+ }
+
+/* hover card in paragraph change color */
+ .Section .cards .card:nth-child(5):hover .text-content p{
+    color: rgb(70, 62, 62);
+ }
+
+/* All h4 heading color change in hover effect */
+.Section .cards .card:nth-child(1):hover .text-content h4{
+    color: rgb(190, 174, 173);
+ }
+.Section .cards .card:nth-child(2):hover .text-content h4{
+    color: rgb(154, 240, 207);
+ }
+ .Section .cards .card:nth-child(3):hover .text-content h4{
+    color: #e45c7e;
+ }
+ .Section .cards .card:nth-child(4):hover .text-content h4{
+    color:#21969c;
+ }
+ .Section .cards .card:nth-child(5):hover .text-content h4{
+    color: #19ad70;
+ }
+ .Section .cards .card:nth-child(6):hover .text-content h4{
+    color: #57007B;
+ }
+ /* Hover card in span change color */
+ .Section .cards .card:nth-child(1):hover .text-content>p>span{
+    color: rgb(190, 174, 173);
+    font-weight: 800;
+ }
+ .Section .cards .card:nth-child(2):hover .text-content>p>span{
+     color: rgb(154, 240, 207);
+     font-weight: 800;
+  }
+  .Section .cards .card:nth-child(3):hover .text-content>p>span{
+    color: #e45c7e;
+    font-weight: 800;
+ }
+ .Section .cards .card:nth-child(4):hover .text-content>p>span{
+    color:#21969c;
+    font-weight: 800;
+ }
+ .Section .cards .card:nth-child(5):hover .text-content>p>span{
+    color: #19ad70;
+    font-weight: 800;
+ }
+ .Section .cards .card:nth-child(6):hover .text-content>p>span{
+    color: #57007B;
+    font-weight: 800;
+ }
+
+ /* card change bg color */
+  .Section .cards .card:nth-child(2){
+      &::before{
+        background: rgba(80, 156, 245, 1);
+      }
+    }
+
+    .Section .cards .card:nth-child(3){
+        &::before{
+          background: #FF92AE;
+        }
+      }
+
+      .Section .cards .card:nth-child(4){
+        &::before{
+          background: #67E9F1;
+        }
+      }
+
+      
+      .Section .cards .card:nth-child(5){
+        &::before{
+          background: #FFEF5E;
+        }
+      }
+
+      .Section .cards .card:nth-child(6){
+        &::before{
+          background: #F76680;
+        }
+      }
+
