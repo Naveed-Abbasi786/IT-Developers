@@ -20,9 +20,9 @@
     flex-direction: row;
 }
 .Section .cards .card {
-    flex-basis: calc(50% - 20px);   
+    flex-basis: calc(50% - 50px);   
+     height: max-content;
     margin: 10px;
-    height: 30vh;
     background: #ececed;
     display: block;
     position: relative;
@@ -51,7 +51,10 @@
  
 .Section .cards .card>.img{
     width: 10%; 
-    height: 26%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 6% 0 0 5%;
     border-radius: 7px;
     background: #28272e;
@@ -75,12 +78,11 @@
 .Section .cards .card>.img >img{
     width: 50%;
     height: 60%;
-    margin: 15% 0 0 25%;
 }
-.Section .cards .card .text-content{
-    width: 80%;
-    margin: -9% 0 0 22%;
-}
+  .Section .cards .card .text-content{
+      width: 80%;
+      margin: -15% 0 0 22%;
+  }
 .Section .cards .card .text-content>h4{
 color: #28272e;
 }

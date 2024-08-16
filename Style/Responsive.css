@@ -290,7 +290,15 @@
         flex-basis: calc(100%);  
     }
 }
-/* Recent Work in inline */
+@media screen and (max-width:386px){
+    .Section .cards .card>.img{
+        width: 13% !important; 
+        height: 10vh !important;
+    }
+    .Section .cards .card .text-content{
+        margin: -16% 0 0 22%;
+    }}
+
 
 
 
