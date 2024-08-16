@@ -293,7 +293,7 @@
 @media screen and (max-width:386px){
     .Section .cards .card>.img{
         width: 13% !important; 
-        height: 10vh !important;
+        height: 8vh !important;
     }
     .Section .cards .card .text-content{
         margin: -16% 0 0 22%;
